@@ -12,7 +12,7 @@ namespace Model
     using System;
     using System.Collections.Generic;
     
-    public partial class usuario
+    public partial class Usuario
     {
         public int Id { get; set; }
         public string email { get; set; }
