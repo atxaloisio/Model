@@ -40,6 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dbInteg.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbInteg.tt</DependentUpon>
+    </Compile>
     <Compile Include="dbIntegracao.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -47,13 +52,17 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="usuario.cs">
-      <DependentUpon>dbIntegracao.tt</DependentUpon>
+      <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="dbInteg.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>dbInteg.cs</LastGenOutput>
+    </Content>
     <Content Include="dbIntegracao.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>dbIntegracao.cs</LastGenOutput>
