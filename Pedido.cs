@@ -20,10 +20,10 @@ namespace Model
             this.itempedidoes = new HashSet<ItemPedido>();
             this.pedido_observacoes = new HashSet<Pedido_Observacoes>();
             this.pedido_frete = new HashSet<Pedido_Frete>();
-            this.pedido_infoadic = new HashSet<Pedido_InfoAdic>();
             this.pedido_parcelas = new HashSet<Pedido_Parcelas>();
             this.pedido_total = new HashSet<Pedido_Total>();
             this.pedido_otica = new HashSet<Pedido_Otica>();
+            this.pedido_infoadic = new HashSet<Pedido_InfoAdic>();
         }
     
         public long id { get; set; }
@@ -54,13 +54,13 @@ namespace Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Pedido_Frete> pedido_frete { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Pedido_InfoAdic> pedido_infoadic { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Pedido_Parcelas> pedido_parcelas { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Pedido_Total> pedido_total { get; set; }
         public virtual Cliente cliente { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Pedido_Otica> pedido_otica { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Pedido_InfoAdic> pedido_infoadic { get; set; }
     }
 }

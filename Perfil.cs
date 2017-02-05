@@ -12,19 +12,26 @@ namespace Model
     using System;
     using System.Collections.Generic;
     
-    public partial class Usuario
+    public partial class Perfil
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Perfil()
+        {
+            this.usuarios = new HashSet<Usuario>();
+            this.funcao_perfil = new HashSet<Funcao_Perfil>();
+        }
+    
         public long Id { get; set; }
-        public string email { get; set; }
+        public string descricao { get; set; }
         public string nome { get; set; }
-        public string password { get; set; }
-        public Nullable<long> Id_perfil { get; set; }
         public Nullable<System.DateTime> inclusao { get; set; }
         public string usuario_inclusao { get; set; }
         public Nullable<System.DateTime> alteracao { get; set; }
         public string usuario_alteracao { get; set; }
-        public string inativo { get; set; }
     
-        public virtual Perfil perfil { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Usuario> usuarios { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Funcao_Perfil> funcao_perfil { get; set; }
     }
 }

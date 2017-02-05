@@ -52,6 +52,9 @@
     <Compile Include="Cliente_Tag.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
+    <Compile Include="Conta_Corrente.cs">
+      <DependentUpon>dbInteg.tt</DependentUpon>
+    </Compile>
     <Compile Include="dbInteg.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -61,6 +64,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dbIntegracao.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Funcao.cs">
+      <DependentUpon>dbInteg.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Funcao_Perfil.cs">
+      <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
     <Compile Include="ItemPedido.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
@@ -111,6 +120,9 @@
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
     <Compile Include="Pedido_Total.cs">
+      <DependentUpon>dbInteg.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Perfil.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
     <Compile Include="Produto.cs">

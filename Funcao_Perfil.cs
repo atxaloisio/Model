@@ -12,26 +12,34 @@ namespace Model
     using System;
     using System.Collections.Generic;
     
-    public partial class Pedido_InfoAdic
+    public partial class Funcao_Perfil
     {
+        public Funcao_Perfil()
+        {
+
+        }
+        public Funcao_Perfil(bool IniOperacoes)
+        {
+            consultar = "N";
+            editar = "N";
+            excluir = "N";
+            salvar = "N";
+            imprimir = "N";
+        }
         public long Id { get; set; }
-        public long Id_Pedido { get; set; }
-        public string codigo_categoria { get; set; }
-        public int codigo_conta_corrente { get; set; }
-        public string numero_pedido_cliente { get; set; }
-        public string numero_contrato { get; set; }
-        public string contato { get; set; }
-        public string dados_adicionais_nf { get; set; }
-        public string consumidor_final { get; set; }
-        public string utilizar_emails { get; set; }
-        public string enviar_email { get; set; }
-        public Nullable<int> codVend { get; set; }
-        public Nullable<int> codProj { get; set; }
+        public long Id_perfil { get; set; }
+        public int codigo_funcao { get; set; }
+        public string consultar { get; set; }
+        public string editar { get; set; }
+        public string excluir { get; set; }
+        public string salvar { get; set; }
+        public string imprimir { get; set; }
         public Nullable<System.DateTime> inclusao { get; set; }
         public string usuario_inclusao { get; set; }
         public Nullable<System.DateTime> alteracao { get; set; }
         public string usuario_alteracao { get; set; }
     
-        public virtual Pedido pedido { get; set; }
+        public virtual Funcao funcao { get; set; }
+        public virtual Perfil perfil { get; set; }
     }
 }
