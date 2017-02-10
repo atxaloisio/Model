@@ -31,7 +31,9 @@ namespace Model
         public string usuario_inclusao { get; set; }
         public Nullable<System.DateTime> alteracao { get; set; }
         public string usuario_alteracao { get; set; }
+        public long Id_conta_corrente { get; set; }
     
         public virtual Pedido pedido { get; set; }
+        public virtual Conta_Corrente conta_corrente { get; set; }
     }
 }

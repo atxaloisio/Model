@@ -24,7 +24,7 @@ namespace Model
         }
     
         public long Id { get; set; }
-        public Nullable<long> codigo_cliente_omie { get; set; }
+        public long codigo_cliente_omie { get; set; }
         public string codigo_cliente_integracao { get; set; }
         public string cnpj_cpf { get; set; }
         public string razao_social { get; set; }

@@ -40,6 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Categoria.cs">
+      <DependentUpon>dbInteg.tt</DependentUpon>
+    </Compile>
     <Compile Include="Cidade.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
@@ -133,6 +136,9 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tag.cs">
+      <DependentUpon>dbInteg.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Unidade.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
     <Compile Include="Usuario.cs">

@@ -16,9 +16,8 @@ namespace Model
     {
         public Funcao_Perfil()
         {
-
         }
-        public Funcao_Perfil(bool IniOperacoes)
+        public Funcao_Perfil(bool InitPropertys)
         {
             consultar = "N";
             editar = "N";

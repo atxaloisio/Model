@@ -14,6 +14,12 @@ namespace Model
     
     public partial class Conta_Corrente
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Conta_Corrente()
+        {
+            this.pedido_infoadic = new HashSet<Pedido_InfoAdic>();
+        }
+    
         public long Id { get; set; }
         public int nCodCC { get; set; }
         public string cCodCCInt { get; set; }
@@ -39,5 +45,8 @@ namespace Model
         public string usuario_inclusao { get; set; }
         public Nullable<System.DateTime> alteracao { get; set; }
         public string usuario_alteracao { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Pedido_InfoAdic> pedido_infoadic { get; set; }
     }
 }
