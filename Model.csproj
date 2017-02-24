@@ -63,10 +63,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
-    <Compile Include="dbIntegracao.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dbIntegracao.tt</DependentUpon>
+    <Compile Include="FiltroPesquisa.cs" />
+    <Compile Include="FormasPagVenda.cs">
+      <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
     <Compile Include="Funcao.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
@@ -152,10 +151,6 @@
     <Content Include="dbInteg.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>dbInteg.cs</LastGenOutput>
-    </Content>
-    <Content Include="dbIntegracao.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>dbIntegracao.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

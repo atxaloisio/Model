@@ -66,6 +66,7 @@ namespace Model
         public string usuario_inclusao { get; set; }
         public Nullable<System.DateTime> alteracao { get; set; }
         public string usuario_alteracao { get; set; }
+        public Nullable<long> Id_transportadora { get; set; }
     
         public virtual Cliente cliente { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

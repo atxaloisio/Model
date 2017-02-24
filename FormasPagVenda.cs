@@ -7,3 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+namespace Model
+{
+    using System;
+    using System.Collections.Generic;
+    
+    public partial class FormasPagVenda
+    {
+        public long Id { get; set; }
+        public string cCodigo { get; set; }
+        public Nullable<int> nQtdeParc { get; set; }
+        public string cDescricao { get; set; }
+    }
+}
