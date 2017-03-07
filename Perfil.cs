@@ -21,9 +21,9 @@ namespace Model
             this.funcao_perfil = new HashSet<Funcao_Perfil>();
         }
     
-        public long Id { get; set; }        
-        public string nome { get; set; }
+        public long Id { get; set; }
         public string descricao { get; set; }
+        public string nome { get; set; }
         public Nullable<System.DateTime> inclusao { get; set; }
         public string usuario_inclusao { get; set; }
         public Nullable<System.DateTime> alteracao { get; set; }

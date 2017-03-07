@@ -118,6 +118,7 @@
     <Compile Include="Pedido_Otica.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
+    <Compile Include="Pedido_OticaView.cs" />
     <Compile Include="Pedido_Parcelas.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>

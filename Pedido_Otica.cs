@@ -67,6 +67,7 @@ namespace Model
         public Nullable<System.DateTime> alteracao { get; set; }
         public string usuario_alteracao { get; set; }
         public Nullable<long> Id_transportadora { get; set; }
+        public Nullable<long> codigo { get; set; }
     
         public virtual Cliente cliente { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -77,5 +78,6 @@ namespace Model
         public virtual ICollection<Pedido_Armacao> pedido_armacao { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Pedido_Lente> pedido_lente { get; set; }
+        public virtual FormasPagVenda formaspagvenda { get; set; }
     }
 }
