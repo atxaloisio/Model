@@ -12,7 +12,7 @@ namespace Model
     using System;
     using System.Collections.Generic;
     
-    public partial class ItemPedido_Otica
+    public partial class ItemPedido_Otica : EntityBase
     {
         public long Id { get; set; }
         public long Id_pedido_otica { get; set; }

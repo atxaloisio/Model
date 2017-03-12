@@ -28,5 +28,6 @@ namespace Model
         public string conta_receita { get; set; }
         public string totalizadora { get; set; }
         public string transferencia { get; set; }
+        public Nullable<int> controle { get; set; }
     }
 }

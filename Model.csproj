@@ -59,10 +59,11 @@
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
     <Compile Include="dbInteg.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>dbInteg.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
+    <Compile Include="EntityBase.cs" />
     <Compile Include="FiltroPesquisa.cs" />
     <Compile Include="FormasPagVenda.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
