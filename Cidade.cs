@@ -14,11 +14,20 @@ namespace Model
     
     public partial class Cidade
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Cidade()
+        {
+            this.rotas = new HashSet<Rota>();
+        }
+    
         public long Id { get; set; }
         public string cCod { get; set; }
         public string cNome { get; set; }
         public string cUF { get; set; }
         public string nCodIBGE { get; set; }
-        public Nullable<int> nCodSIAFI { get; set; }
+        public string nCodSIAFI { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Rota> rotas { get; set; }
     }
 }

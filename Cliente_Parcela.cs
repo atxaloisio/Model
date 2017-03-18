@@ -24,6 +24,6 @@ namespace Model
         public string usuario_alteracao { get; set; }
     
         public virtual Cliente cliente { get; set; }
-        public virtual Parcela parcela { get; set; }
+        public virtual FormasPagVenda formaspagvenda { get; set; }
     }
 }

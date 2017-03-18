@@ -12,18 +12,13 @@ namespace Model
     using System;
     using System.Collections.Generic;
     
-    public partial class Cliente_Tag
+    public partial class Cliente_Transportadora
     {
         public long Id { get; set; }
         public long Id_cliente { get; set; }
-        public long Id_tag { get; set; }
-        public string tag { get; set; }
-        public Nullable<System.DateTime> inclusao { get; set; }
-        public string usuario_inclusao { get; set; }
-        public Nullable<System.DateTime> alteracao { get; set; }
-        public string usuario_alteracao { get; set; }
+        public long Id_transportadora { get; set; }
     
-        public virtual Cliente cliente { get; set; }
-        public virtual Tag Tags { get; set; }
+        public virtual Cliente Cliente { get; set; }
+        public virtual Cliente Transportadora { get; set; }
     }
 }
