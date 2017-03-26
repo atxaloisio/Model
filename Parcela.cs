@@ -14,6 +14,13 @@ namespace Model
     
     public partial class Parcela
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Parcela()
+        {
+            this.cliente_parcela = new HashSet<Cliente_Parcela>();
+            this.pedido_otica = new HashSet<Pedido_Otica>();
+        }
+    
         public long Id { get; set; }
         public string codigo { get; set; }
         public string descricao { get; set; }
@@ -22,5 +29,10 @@ namespace Model
         public string usuario_inclusao { get; set; }
         public Nullable<System.DateTime> alteracao { get; set; }
         public string usuario_alteracao { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Cliente_Parcela> cliente_parcela { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Pedido_Otica> pedido_otica { get; set; }
     }
 }

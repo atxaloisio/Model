@@ -37,6 +37,7 @@ namespace Model
         public string usuario_inclusao { get; set; }
         public Nullable<System.DateTime> alteracao { get; set; }
         public string usuario_alteracao { get; set; }
+        public Nullable<int> codigo_produto { get; set; }
     
         public virtual ItemPedido itempedido { get; set; }
         public virtual Produto produto { get; set; }

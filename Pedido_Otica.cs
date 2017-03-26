@@ -78,6 +78,6 @@ namespace Model
         public virtual ICollection<Pedido_Armacao> pedido_armacao { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Pedido_Lente> pedido_lente { get; set; }
-        public virtual FormasPagVenda formaspagvenda { get; set; }
+        public virtual Parcela parcela { get; set; }
     }
 }

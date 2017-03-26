@@ -62,9 +62,9 @@
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
     <Compile Include="dbInteg.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>dbInteg.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="EntityBase.cs" />
     <Compile Include="FiltroPesquisa.cs" />
@@ -137,6 +137,9 @@
     <Compile Include="Produto_Ibpt.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
+    <Compile Include="Produto_Imposto.cs">
+      <DependentUpon>dbInteg.tt</DependentUpon>
+    </Compile>
     <Compile Include="Rota.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
@@ -151,6 +154,7 @@
     </Compile>
     <Compile Include="Views\Cliente_ParcelaView.cs" />
     <Compile Include="Views\Cliente_TransportadoraView.cs" />
+    <Compile Include="Views\Pedido_OticaAgrupaView.cs" />
     <Compile Include="Views\Pedido_OticaView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Enumerados.cs" />
