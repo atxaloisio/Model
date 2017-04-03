@@ -82,10 +82,20 @@ namespace Model
         GRAVADO = 0,
         [StringValue("Impresso")]
         IMPRESSO = 1,
+        [StringValue("Aguardando Produção")]
+        AGPRODUCAO = 2,
+        [StringValue("Em Produção")]
+        PRODUCAO = 3,
+        [StringValue("A Entregar")]
+        AENTREGAR = 4,
+        [StringValue("Saiu p/ Entrega")]
+        SAIUPENTREGA = 5,
+        [StringValue("Entregue")]
+        ENTREGUE = 6,
         [StringValue("Agrupado")]
-        AGRUPADO = 2,
+        AGRUPADO = 7,
         [StringValue("Faturado")]
-        FATURADO = 3
+        FATURADO = 8
     }
 
     public enum TipoArmacao
