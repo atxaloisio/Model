@@ -12,25 +12,27 @@ namespace Model
     using System;
     using System.Collections.Generic;
     
-    public partial class Cidade
+    public partial class Vendedor
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Cidade()
+        public Vendedor()
         {
-            this.rotas = new HashSet<Rota>();
+            this.pedido_otica = new HashSet<Pedido_Otica>();
             this.vendedor_localidade = new HashSet<Vendedor_Localidade>();
+            this.cliente_vendedor = new HashSet<Cliente_Vendedor>();
         }
     
         public long Id { get; set; }
-        public string cCod { get; set; }
-        public string cNome { get; set; }
-        public string cUF { get; set; }
-        public string nCodIBGE { get; set; }
-        public string nCodSIAFI { get; set; }
+        public Nullable<long> codigo { get; set; }
+        public string codInt { get; set; }
+        public string nome { get; set; }
+        public string inativo { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Rota> rotas { get; set; }
+        public virtual ICollection<Pedido_Otica> pedido_otica { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Vendedor_Localidade> vendedor_localidade { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Cliente_Vendedor> cliente_vendedor { get; set; }
     }
 }

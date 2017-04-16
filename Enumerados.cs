@@ -208,4 +208,18 @@ namespace Model
         //     or all of its property values have been modified.
         Modified = 16
     }
+
+    public enum Operacao
+    {
+        [StringValue("Consultar")]
+        Consultar = 1,
+        [StringValue("Editar")]
+        Editar = 2,
+        [StringValue("Excluir")]
+        Excluir = 3,
+        [StringValue("Salvar")]
+        Salvar = 4,
+        [StringValue("Imprimir")]
+        Imprimir = 5
+    }
 }

@@ -24,6 +24,7 @@ namespace Model
     
         public long Id { get; set; }
         public Nullable<long> Id_cliente { get; set; }
+        public Nullable<long> codigo { get; set; }
         public string codigo_cliente { get; set; }
         public Nullable<long> Id_pedido { get; set; }
         public string codigo_pedido { get; set; }
@@ -34,6 +35,7 @@ namespace Model
         public Nullable<System.DateTime> date_previsao_entrega { get; set; }
         public Nullable<System.TimeSpan> hora_previsao_entrega { get; set; }
         public Nullable<long> id_motivo_entrega { get; set; }
+        public Nullable<long> Id_transportadora { get; set; }
         public string od_gl_esf { get; set; }
         public string od_gl_cil { get; set; }
         public Nullable<int> od_eixo { get; set; }
@@ -62,12 +64,15 @@ namespace Model
         public string numero_caixa { get; set; }
         public Nullable<int> status { get; set; }
         public string agrupado { get; set; }
+        public Nullable<long> Id_vendedor { get; set; }
+        public Nullable<int> Id_caixa { get; set; }
+        public string cancelado { get; set; }
+        public Nullable<System.DateTime> data_cancelamento { get; set; }
+        public string motivo_cancelamento { get; set; }
         public Nullable<System.DateTime> inclusao { get; set; }
         public string usuario_inclusao { get; set; }
         public Nullable<System.DateTime> alteracao { get; set; }
         public string usuario_alteracao { get; set; }
-        public Nullable<long> Id_transportadora { get; set; }
-        public Nullable<long> codigo { get; set; }
     
         public virtual Cliente cliente { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -79,5 +84,8 @@ namespace Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Pedido_Lente> pedido_lente { get; set; }
         public virtual Parcela parcela { get; set; }
+        public virtual Vendedor vendedor { get; set; }
+        public virtual Cliente transportadora { get; set; }
+        public virtual Caixa caixa { get; set; }
     }
 }

@@ -40,6 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Caixa.cs">
+      <DependentUpon>dbInteg.tt</DependentUpon>
+    </Compile>
     <Compile Include="Categoria.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
@@ -58,13 +61,16 @@
     <Compile Include="Cliente_Transportadora.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
+    <Compile Include="Cliente_Vendedor.cs">
+      <DependentUpon>dbInteg.tt</DependentUpon>
+    </Compile>
     <Compile Include="Conta_Corrente.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
     <Compile Include="dbInteg.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>dbInteg.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="EntityBase.cs" />
     <Compile Include="FiltroPesquisa.cs" />
@@ -152,13 +158,24 @@
     <Compile Include="Usuario.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
+    <Compile Include="Vendedor.cs">
+      <DependentUpon>dbInteg.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vendedor_Localidade.cs">
+      <DependentUpon>dbInteg.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CaixaView.cs" />
     <Compile Include="Views\Cliente_ParcelaView.cs" />
     <Compile Include="Views\Cliente_TransportadoraView.cs" />
+    <Compile Include="Views\Cliente_VendedorView.cs" />
     <Compile Include="Views\Pedido_OticaAgrupaView.cs" />
     <Compile Include="Views\Pedido_OticaView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Enumerados.cs" />
     <Compile Include="Views\RotaView.cs" />
+    <Compile Include="Views\UsuarioView.cs" />
+    <Compile Include="Views\VendedorView.cs" />
+    <Compile Include="Views\Vendedor_LocalidadeView.cs" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

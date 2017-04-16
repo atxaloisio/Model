@@ -12,25 +12,19 @@ namespace Model
     using System;
     using System.Collections.Generic;
     
-    public partial class Cidade
+    public partial class Caixa
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Cidade()
+        public Caixa()
         {
-            this.rotas = new HashSet<Rota>();
-            this.vendedor_localidade = new HashSet<Vendedor_Localidade>();
+            this.pedido_otica = new HashSet<Pedido_Otica>();
         }
     
-        public long Id { get; set; }
-        public string cCod { get; set; }
-        public string cNome { get; set; }
-        public string cUF { get; set; }
-        public string nCodIBGE { get; set; }
-        public string nCodSIAFI { get; set; }
+        public int Id { get; set; }
+        public string numero { get; set; }
+        public string inativo { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Rota> rotas { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Vendedor_Localidade> vendedor_localidade { get; set; }
+        public virtual ICollection<Pedido_Otica> pedido_otica { get; set; }
     }
 }
