@@ -28,6 +28,7 @@ namespace Model
         public long Id { get; set; }
         public long Id_perfil { get; set; }
         public int codigo_funcao { get; set; }
+        public string cancelar { get; set; }
         public string consultar { get; set; }
         public string editar { get; set; }
         public string excluir { get; set; }

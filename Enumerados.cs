@@ -211,6 +211,8 @@ namespace Model
 
     public enum Operacao
     {
+        [StringValue("Cancelar")]
+        Cancelar = 0,
         [StringValue("Consultar")]
         Consultar = 1,
         [StringValue("Editar")]

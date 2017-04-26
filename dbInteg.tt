@@ -127,6 +127,7 @@ foreach (var complex in typeMapper.GetItemsToGenerate<ComplexType>(itemCollectio
 
     if (propertiesWithDefaultValues.Any() || complexProperties.Any())
     {
+
 #>
     public <#=code.Escape(complex)#>()
     {

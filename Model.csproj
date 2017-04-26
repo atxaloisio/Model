@@ -165,6 +165,7 @@
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
     <Compile Include="Views\CaixaView.cs" />
+    <Compile Include="Views\ClienteView.cs" />
     <Compile Include="Views\Cliente_ParcelaView.cs" />
     <Compile Include="Views\Cliente_TransportadoraView.cs" />
     <Compile Include="Views\Cliente_VendedorView.cs" />
