@@ -64,6 +64,9 @@
     <Compile Include="Cliente_Vendedor.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
+    <Compile Include="CNAE.cs">
+      <DependentUpon>dbInteg.tt</DependentUpon>
+    </Compile>
     <Compile Include="Conta_Corrente.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
@@ -73,6 +76,9 @@
       <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="EntityBase.cs" />
+    <Compile Include="Familia_Produto.cs">
+      <DependentUpon>dbInteg.tt</DependentUpon>
+    </Compile>
     <Compile Include="FiltroPesquisa.cs" />
     <Compile Include="FormasPagVenda.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>

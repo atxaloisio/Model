@@ -60,6 +60,8 @@ namespace Model
         public Nullable<System.DateTime> alteracao { get; set; }
         public string usuario_alteracao { get; set; }
         public int codigo_produto { get; set; }
+        public string sincronizar { get; set; }
+        public Nullable<long> id_familia { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ItemPedido_Produto> itempedido_produto { get; set; }
@@ -67,5 +69,6 @@ namespace Model
         public virtual ICollection<Produto_Ibpt> produto_ibpt { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ItemPedido_Otica> itempedido_otica { get; set; }
+        public virtual Familia_Produto familia_produto { get; set; }
     }
 }
