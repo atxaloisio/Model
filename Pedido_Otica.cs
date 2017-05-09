@@ -20,6 +20,8 @@ namespace Model
             this.itempedido_otica = new HashSet<ItemPedido_Otica>();
             this.pedido_armacao = new HashSet<Pedido_Armacao>();
             this.pedido_lente = new HashSet<Pedido_Lente>();
+            this.pedido_otica_infoadic = new HashSet<Pedido_Otica_InfoAdic>();
+            this.pedido_otica_parcelas = new HashSet<Pedido_Otica_Parcelas>();
         }
     
         public long Id { get; set; }
@@ -87,5 +89,9 @@ namespace Model
         public virtual Vendedor vendedor { get; set; }
         public virtual Cliente transportadora { get; set; }
         public virtual Caixa caixa { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Pedido_Otica_InfoAdic> pedido_otica_infoadic { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Pedido_Otica_Parcelas> pedido_otica_parcelas { get; set; }
     }
 }

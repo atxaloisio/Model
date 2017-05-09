@@ -224,4 +224,18 @@ namespace Model
         [StringValue("Imprimir")]
         Imprimir = 5
     }
+
+    public enum Regime_Tributario
+    {
+        [StringValue("Simples Nacional")]
+        Simples_Nacional = 1,
+        [StringValue("Simples Nacional - excesso de sublimite de receita")]
+        Simples_Nacional_ESR = 2,
+        [StringValue("Regime Normal - Lucro Presumido")]
+        Lucro_Presumido = 3,
+        [StringValue("Regime Normal - Lucro Real")]
+        Lucro_Real = 4,
+        [StringValue("Produtor Rural")]
+        Produtor_Rural = 5        
+    }
 }
