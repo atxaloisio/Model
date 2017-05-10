@@ -189,6 +189,7 @@
     <Compile Include="Views\Pedido_OticaView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Enumerados.cs" />
+    <Compile Include="Views\ProdutoView.cs" />
     <Compile Include="Views\RotaView.cs" />
     <Compile Include="Views\UsuarioView.cs" />
     <Compile Include="Views\VendedorView.cs" />
