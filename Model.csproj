@@ -110,6 +110,9 @@
     <Compile Include="Motivo_Entrega.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
+    <Compile Include="Movimento.cs">
+      <DependentUpon>dbInteg.tt</DependentUpon>
+    </Compile>
     <Compile Include="Pais.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>

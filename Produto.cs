@@ -20,6 +20,7 @@ namespace Model
             this.itempedido_produto = new HashSet<ItemPedido_Produto>();
             this.produto_ibpt = new HashSet<Produto_Ibpt>();
             this.itempedido_otica = new HashSet<ItemPedido_Otica>();
+            this.movimentacoes = new HashSet<Movimento>();
         }
     
         public long id { get; set; }
@@ -70,5 +71,7 @@ namespace Model
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ItemPedido_Otica> itempedido_otica { get; set; }
         public virtual Familia_Produto familia_produto { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Movimento> movimentacoes { get; set; }
     }
 }

@@ -22,7 +22,6 @@ namespace Model
         public string data_vencimento { get; set; }
         public Nullable<int> quantidade_dias { get; set; }
         public string pago { get; set; }
-        public Nullable<System.DateTime> Data_pagamento { get; set; }
         public string usuario_pagamento { get; set; }
         public Nullable<System.DateTime> data_pagamento { get; set; }
         public string forma_pagamento { get; set; }
