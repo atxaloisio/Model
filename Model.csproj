@@ -170,6 +170,12 @@
     <Compile Include="Tag.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
+    <Compile Include="Tipo_Armacao.cs">
+      <DependentUpon>dbInteg.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Tipo_Lente.cs">
+      <DependentUpon>dbInteg.tt</DependentUpon>
+    </Compile>
     <Compile Include="Unidade.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
