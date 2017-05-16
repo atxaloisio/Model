@@ -20,6 +20,7 @@ namespace Model
         public Nullable<int> crm_medico { get; set; }
         public string laboratorio { get; set; }
         public string telefone_laboratorio { get; set; }
+        public string ordem_servico { get; set; }
     
         public virtual Pedido_Otica pedido_otica { get; set; }
     }
