@@ -41,13 +41,13 @@ namespace Model
         public string od_gl_esf { get; set; }
         public string od_gl_cil { get; set; }
         public Nullable<int> od_eixo { get; set; }
-        public Nullable<decimal> od_adicao { get; set; }
+        public string od_adicao { get; set; }
         public string od_gp_esf { get; set; }
         public string od_gp_cil { get; set; }
         public string oe_gl_esf { get; set; }
         public string oe_gl_cil { get; set; }
         public Nullable<int> oe_eixo { get; set; }
-        public Nullable<decimal> oe_adicao { get; set; }
+        public string oe_adicao { get; set; }
         public string oe_gp_esf { get; set; }
         public string oe_gp_cil { get; set; }
         public string od_dnp_longe { get; set; }
