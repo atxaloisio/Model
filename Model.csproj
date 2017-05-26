@@ -193,6 +193,7 @@
     <Compile Include="Views\Cliente_ParcelaView.cs" />
     <Compile Include="Views\Cliente_TransportadoraView.cs" />
     <Compile Include="Views\Cliente_VendedorView.cs" />
+    <Compile Include="Views\ParcelaView.cs" />
     <Compile Include="Views\Pedido_OticaAgrupaView.cs" />
     <Compile Include="Views\Pedido_OticaParcelaView.cs" />
     <Compile Include="Views\Pedido_OticaView.cs" />
