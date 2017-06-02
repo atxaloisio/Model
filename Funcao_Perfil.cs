@@ -25,6 +25,7 @@ namespace Model
             salvar = "N";
             imprimir = "N";
         }
+
         public long Id { get; set; }
         public long Id_perfil { get; set; }
         public int codigo_funcao { get; set; }

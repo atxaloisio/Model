@@ -196,6 +196,7 @@
     <Compile Include="Views\ParcelaView.cs" />
     <Compile Include="Views\Pedido_OticaAgrupaView.cs" />
     <Compile Include="Views\Pedido_OticaParcelaView.cs" />
+    <Compile Include="Views\Pedido_LaboratorioView.cs" />
     <Compile Include="Views\Pedido_OticaView.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Enumerados.cs" />

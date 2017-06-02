@@ -21,6 +21,10 @@ namespace Model
         public string laboratorio { get; set; }
         public string telefone_laboratorio { get; set; }
         public string ordem_servico { get; set; }
+        public Nullable<int> od_gp_eixo { get; set; }
+        public Nullable<int> oe_gp_eixo { get; set; }
+        public string od_gp_alt { get; set; }
+        public string oe_gp_alt { get; set; }
     
         public virtual Pedido_Otica pedido_otica { get; set; }
     }
