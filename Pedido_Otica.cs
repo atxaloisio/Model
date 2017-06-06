@@ -35,7 +35,7 @@ namespace Model
         public Nullable<long> condicao_pagamento { get; set; }
         public string numero_pedido_cliente { get; set; }
         public Nullable<System.DateTime> date_previsao_entrega { get; set; }
-        public Nullable<System.TimeSpan> hora_previsao_entrega { get; set; }
+        public string hora_previsao_entrega { get; set; }
         public Nullable<long> id_motivo_entrega { get; set; }
         public Nullable<long> Id_transportadora { get; set; }
         public string od_gl_esf { get; set; }

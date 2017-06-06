@@ -17,7 +17,7 @@ namespace Model
         public long Id { get; set; }
         public long id_pedido_otica { get; set; }
         public string nome_medico { get; set; }
-        public Nullable<int> crm_medico { get; set; }
+        public string crm_medico { get; set; }
         public string laboratorio { get; set; }
         public string telefone_laboratorio { get; set; }
         public string ordem_servico { get; set; }
