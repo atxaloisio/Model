@@ -61,7 +61,7 @@
     <Compile Include="Cliente_Transportadora.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
-    <Compile Include="cliente_vendedor.cs">
+    <Compile Include="Cliente_Vendedor.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
     <Compile Include="CNAE.cs">
@@ -71,9 +71,9 @@
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
     <Compile Include="dbInteg.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>dbInteg.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="Empresa.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
@@ -179,7 +179,7 @@
     <Compile Include="Unidade.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
-    <Compile Include="usuario.cs">
+    <Compile Include="Usuario.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
     <Compile Include="Vendedor.cs">

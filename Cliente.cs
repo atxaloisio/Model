@@ -43,6 +43,7 @@ namespace Model
         public string estado { get; set; }
         public string cep { get; set; }
         public string codigo_pais { get; set; }
+        public Nullable<System.DateTime> nascimento { get; set; }
         public string contato { get; set; }
         public string telefone1_ddd { get; set; }
         public string telefone1_numero { get; set; }
