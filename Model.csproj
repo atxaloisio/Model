@@ -71,9 +71,9 @@
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
     <Compile Include="dbInteg.cs">
-      <DependentUpon>dbInteg.tt</DependentUpon>
-      <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
     <Compile Include="Empresa.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
