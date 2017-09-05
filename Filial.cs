@@ -12,17 +12,12 @@ namespace Model
     using System;
     using System.Collections.Generic;
     
-    public partial class Empresa
+    public partial class Filial
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Empresa()
-        {
-            this.filials = new HashSet<Filial>();
-        }
-    
         public long Id { get; set; }
-        public Nullable<long> codigo_empresa { get; set; }
-        public string codigo_empresa_integracao { get; set; }
+        public long Id_empresa { get; set; }
+        public Nullable<long> codigo_filial { get; set; }
+        public string codigo_filial_integracao { get; set; }
         public string cnpj { get; set; }
         public string razao_social { get; set; }
         public string nome_fantasia { get; set; }
@@ -54,7 +49,6 @@ namespace Model
         public string gera_nfse { get; set; }
         public string optante_simples_nacional { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Filial> filials { get; set; }
+        public virtual Empresa empresa { get; set; }
     }
 }
