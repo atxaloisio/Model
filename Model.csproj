@@ -170,6 +170,7 @@
     <Compile Include="Rota.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
+    <Compile Include="stUsuario.cs" />
     <Compile Include="Tag.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
