@@ -67,6 +67,9 @@
     <Compile Include="CNAE.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
+    <Compile Include="Contas_Pagar.cs">
+      <DependentUpon>dbInteg.tt</DependentUpon>
+    </Compile>
     <Compile Include="Conta_Corrente.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
@@ -108,6 +111,12 @@
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
     <Compile Include="ItemPedido_Produto.cs">
+      <DependentUpon>dbInteg.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Item_Livro_Caixa.cs">
+      <DependentUpon>dbInteg.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Livro_Caixa.cs">
       <DependentUpon>dbInteg.tt</DependentUpon>
     </Compile>
     <Compile Include="Motivo_Entrega.cs">
@@ -198,6 +207,7 @@
     <Compile Include="Views\Cliente_TransportadoraView.cs" />
     <Compile Include="Views\Cliente_VendedorView.cs" />
     <Compile Include="Views\FilialView.cs" />
+    <Compile Include="Views\Livro_CaixaView.cs" />
     <Compile Include="Views\ParcelaView.cs" />
     <Compile Include="Views\Pedido_OticaAgrupaView.cs" />
     <Compile Include="Views\Pedido_OticaParcelaView.cs" />

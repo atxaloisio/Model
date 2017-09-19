@@ -12,35 +12,23 @@ namespace Model
     using System;
     using System.Collections.Generic;
     
-    public partial class Funcao_Perfil
+    public partial class Item_Livro_Caixa
     {
-        public Funcao_Perfil()
-        {
-        }
-        public Funcao_Perfil(bool InitPropertys)
-        {
-            consultar = "N";
-            editar = "N";
-            excluir = "N";
-            salvar = "N";
-            imprimir = "N";
-        }
-
         public long Id { get; set; }
-        public long Id_perfil { get; set; }
-        public int codigo_funcao { get; set; }
-        public string cancelar { get; set; }
-        public string consultar { get; set; }
-        public string editar { get; set; }
-        public string excluir { get; set; }
-        public string salvar { get; set; }
-        public string imprimir { get; set; }
+        public long Id_livro { get; set; }
+        public Nullable<System.DateTime> tipo { get; set; }
+        public string descricao { get; set; }
+        public string documento { get; set; }
+        public Nullable<decimal> valor { get; set; }
         public Nullable<System.DateTime> inclusao { get; set; }
         public string usuario_inclusao { get; set; }
         public Nullable<System.DateTime> alteracao { get; set; }
         public string usuario_alteracao { get; set; }
+        public Nullable<long> Id_empresa { get; set; }
+        public Nullable<long> Id_filial { get; set; }
     
-        public virtual Funcao funcao { get; set; }
-        public virtual Perfil perfil { get; set; }
+        public virtual Livro_Caixa livro_caixa { get; set; }
+        public virtual Empresa empresa { get; set; }
+        public virtual Filial filial { get; set; }
     }
 }

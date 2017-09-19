@@ -14,6 +14,13 @@ namespace Model
     
     public partial class Filial
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Filial()
+        {
+            this.item_livro_caixa = new HashSet<Item_Livro_Caixa>();
+            this.livro_caixa = new HashSet<Livro_Caixa>();
+        }
+    
         public long Id { get; set; }
         public long Id_empresa { get; set; }
         public Nullable<long> codigo_filial { get; set; }
@@ -50,5 +57,9 @@ namespace Model
         public string optante_simples_nacional { get; set; }
     
         public virtual Empresa empresa { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Item_Livro_Caixa> item_livro_caixa { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Livro_Caixa> livro_caixa { get; set; }
     }
 }
