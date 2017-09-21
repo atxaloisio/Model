@@ -250,4 +250,12 @@ namespace Model
         [StringValue("Produtor Rural")]
         Produtor_Rural = 5        
     }
+
+    public enum tpMovimentoLivroCaixa
+    {
+        [StringValue("Abertura")]
+        Abertura = 1,
+        [StringValue("Encerramento")]
+        Encerramento = 2
+    }
 }
