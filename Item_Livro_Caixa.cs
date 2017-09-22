@@ -16,7 +16,7 @@ namespace Model
     {
         public long Id { get; set; }
         public long Id_livro { get; set; }
-        public Nullable<System.DateTime> tipo { get; set; }
+        public string tipo { get; set; }
         public string descricao { get; set; }
         public string documento { get; set; }
         public Nullable<decimal> valor { get; set; }

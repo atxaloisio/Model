@@ -22,6 +22,7 @@ namespace Model
     
         public long Id { get; set; }
         public Nullable<System.DateTime> data { get; set; }
+        public string status { get; set; }
         public Nullable<decimal> saldo_inicial { get; set; }
         public Nullable<decimal> saldo_final { get; set; }
         public Nullable<System.DateTime> inclusao { get; set; }
