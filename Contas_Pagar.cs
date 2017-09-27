@@ -14,7 +14,13 @@ namespace Model
     
     public partial class Contas_Pagar
     {
-        public decimal Id { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Contas_Pagar()
+        {
+            this.item_livro_caixa = new HashSet<Item_Livro_Caixa>();
+        }
+    
+        public long Id { get; set; }
         public Nullable<long> Id_fornecedor { get; set; }
         public string Documento { get; set; }
         public Nullable<decimal> valor { get; set; }
@@ -22,5 +28,8 @@ namespace Model
         public Nullable<int> categoria { get; set; }
         public Nullable<System.DateTime> previsao { get; set; }
         public string pago { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Item_Livro_Caixa> item_livro_caixa { get; set; }
     }
 }

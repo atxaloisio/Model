@@ -14,6 +14,12 @@ namespace Model
     
     public partial class Pedido_Otica_Parcelas : EntityBase
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Pedido_Otica_Parcelas()
+        {
+            this.item_livro_caixa = new HashSet<Item_Livro_Caixa>();
+        }
+    
         public long Id { get; set; }
         public long Id_pedido_otica { get; set; }
         public Nullable<int> numero_parcela { get; set; }
@@ -27,5 +33,7 @@ namespace Model
         public string forma_pagamento { get; set; }
     
         public virtual Pedido_Otica pedido_otica { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Item_Livro_Caixa> item_livro_caixa { get; set; }
     }
 }

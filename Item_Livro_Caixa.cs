@@ -26,9 +26,13 @@ namespace Model
         public string usuario_alteracao { get; set; }
         public Nullable<long> Id_empresa { get; set; }
         public Nullable<long> Id_filial { get; set; }
+        public Nullable<long> Id_parcela { get; set; }
+        public Nullable<long> Id_contaspagar { get; set; }
     
         public virtual Livro_Caixa livro_caixa { get; set; }
         public virtual Empresa empresa { get; set; }
         public virtual Filial filial { get; set; }
+        public virtual Pedido_Otica_Parcelas pedido_otica_parcelas { get; set; }
+        public virtual Contas_Pagar contas_pagar { get; set; }
     }
 }

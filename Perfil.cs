@@ -22,8 +22,9 @@ namespace Model
         }
     
         public long Id { get; set; }
-        public string descricao { get; set; }
         public string nome { get; set; }
+        public string descricao { get; set; }
+        public string administrativo { get; set; }
         public Nullable<System.DateTime> inclusao { get; set; }
         public string usuario_inclusao { get; set; }
         public Nullable<System.DateTime> alteracao { get; set; }
