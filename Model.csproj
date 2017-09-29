@@ -206,6 +206,7 @@
     <Compile Include="Views\Cliente_ParcelaView.cs" />
     <Compile Include="Views\Cliente_TransportadoraView.cs" />
     <Compile Include="Views\Cliente_VendedorView.cs" />
+    <Compile Include="Views\Contas_PagarView.cs" />
     <Compile Include="Views\FilialView.cs" />
     <Compile Include="Views\Item_Livro_CaixaView.cs" />
     <Compile Include="Views\Livro_CaixaView.cs" />

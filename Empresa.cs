@@ -20,6 +20,7 @@ namespace Model
             this.filials = new HashSet<Filial>();
             this.item_livro_caixa = new HashSet<Item_Livro_Caixa>();
             this.livro_caixa = new HashSet<Livro_Caixa>();
+            this.contas_pagar = new HashSet<Contas_Pagar>();
         }
     
         public long Id { get; set; }
@@ -62,5 +63,7 @@ namespace Model
         public virtual ICollection<Item_Livro_Caixa> item_livro_caixa { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Livro_Caixa> livro_caixa { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Contas_Pagar> contas_pagar { get; set; }
     }
 }

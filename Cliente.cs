@@ -26,6 +26,7 @@ namespace Model
             this.cliente_transportadora1 = new HashSet<Cliente_Transportadora>();
             this.cliente_vendedor = new HashSet<Cliente_Vendedor>();
             this.pedido_otica1 = new HashSet<Pedido_Otica>();
+            this.contas_pagar = new HashSet<Contas_Pagar>();
         }
     
         public long Id { get; set; }
@@ -90,5 +91,7 @@ namespace Model
         public virtual ICollection<Cliente_Vendedor> cliente_vendedor { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Pedido_Otica> pedido_otica1 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Contas_Pagar> contas_pagar { get; set; }
     }
 }
